@@ -1,6 +1,8 @@
 const fs = require("fs");
+const path = require("path");
 
-const USER_FILE = "users.json";
+const dataDir = "/var/data";
+const USER_FILE = path.join(dataDir, "users.json");
 
 // Function to read existing users
 function readUsers() {
