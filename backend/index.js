@@ -32,7 +32,7 @@ app.post("/register", (req, res) => {
   }
 
   const exist = addUser(user);
-  console.log(exist);
+
 
   if (!exist) {
     return res.status(409).json({ message: "User already exists" });
